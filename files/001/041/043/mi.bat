@@ -1,4 +1,4 @@
-; v0.0.6
+; v0.0.7
 del index.html
 
 echo ^<!DOCTYPE html^> >> index.html 
@@ -6,7 +6,7 @@ echo ^<html^>  >> index.html
 echo ^<body^>  >> index.html
 
 echo ^<button onclick="getCurTime()" type="button"^>Get current time position^</button^> >>index.html
-echo ^<button onclick="plus50ms()" type="button"^>Time >> 50ms^</button^> >>index.html
+echo ^<button onclick="plus50ms()" type="button"^>Time+50ms^</button^> >>index.html
 echo ^<button onclick="setCurTime()" type="button"^>Set time position to 5 seconds^</button^>^<br^> >>index.html 
 
 echo ^<video id="myVideo" width="320" height="176" controls^> >>index.html
