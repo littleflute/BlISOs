@@ -1,4 +1,4 @@
-; v0.0.5
+; v0.0.6
 del index.html
 
 echo ^<!DOCTYPE html^> >> index.html 
@@ -29,7 +29,7 @@ echo } >> index.html
 
 
 echo function plus50ms() { >> index.html
-echo    vid.currentTime=5;  >> index.html
+echo    vid.currentTime+=0.05;  >> index.html
 echo } >> index.html 
 echo ^</script^> >> index.html
 
