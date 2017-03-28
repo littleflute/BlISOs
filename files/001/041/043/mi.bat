@@ -1,4 +1,4 @@
-; v0.0.2
+; v0.0.3
 del index.html
 
 echo ^<!DOCTYPE html^> >> index.html 
@@ -14,7 +14,7 @@ echo  ^<source src="mov_bbb.mp4" type="video/mp4"^>  >>index.html
 echo Your browser does not support HTML5 video. >>index.html
 echo ^</video^>  >> index.html
 
-echo ^<script^>
+echo ^<script^>  >> index.html
 echo var vid = document.getElementById("myVideo"); >> index.html
 
 echo function getCurTime() { >> index.html
