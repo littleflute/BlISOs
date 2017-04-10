@@ -1,0 +1,83 @@
+<!DOCTYPE html>	  
+<html>  
+<body> 
+v1.2.2 
+<br> 
+<div id="DivCurTime"></div> 
+<br> 
+<button onclick="getCurTime()" type="button">Get current time position</button>  
+<button onclick="setCurTime(0)" type="button">00</button><br>   
+<button onclick="moveMS(-0.05)" type="button">Time-50ms</button>  
+<button onclick="moveMS(-0.01)" type="button">-10ms</button>  
+<button onclick="moveMS(0.01)" type="button">+10ms</button>  
+<button onclick="moveMS(0.05)" type="button">+50ms</button>  
+<button onclick="setCurTime(5)" type="button">Set time position to 5 seconds</button><br>   
+<button onclick="play(0)">0</button> 
+<button onclick="play(1)">1</button> 
+<button onclick="play(2)">2</button> 
+<button onclick="play(3)">3</button> 
+<button onclick="play(4)">4</button> 
+<button onclick="play(5)">5</button> 
+<button onclick="play(6)">6</button> 
+<button onclick="play(7)">7</button> 
+<button onclick="play(8)">8</button> 
+<button onclick="play(9)">9</button> 
+<button onclick="play(10)">10</button> 
+<br> 
+<button onclick="play(11)">11</button> 
+<button onclick="play(12)">12</button> 
+<button onclick="play(13)">13</button> 
+<button onclick="play(14)">14</button> 
+<button onclick="play(15)">15</button> 
+<button onclick="play(16)">16</button> 
+<button onclick="play(17)">17</button> 
+<button onclick="play(18)">18</button> 
+<button onclick="play(19)">19</button> 
+<button onclick="play(20)">20</button> 
+<br> 
+<button onclick="play(21)">21</button> 
+<button onclick="play(22)">22</button> 
+<button onclick="play(23)">23</button> 
+<button onclick="play(24)">24</button> 
+<button onclick="play(25)">25</button> 
+<button onclick="play(26)">26</button> 
+<button onclick="play(27)">27</button> 
+<button onclick="play(28)">28</button> 
+<button onclick="play(29)">29</button> 
+<button onclick="play(30)">30</button> 
+<br> 
+<button onclick="play(31)">31</button> 
+<button onclick="play(32)">32</button> 
+<button onclick="play(33)">33</button> 
+<button onclick="play(34)">34</button> 
+<button onclick="play(35)">35</button> 
+<button onclick="play(36)">36</button> 
+<button onclick="play(37)">37</button> 
+<button onclick="play(38)">38</button> 
+<button onclick="play(39)">39</button> 
+<button onclick="play(40)">40</button> 
+<br> 
+<video id="myVideo" width="720" height="480" controls> 
+ <source src="0.mp4" type="video/mp4">  
+Your browser does not support HTML5 video. 
+</video>  
+<script>  
+var vid = document.getElementById("myVideo"); 
+function play(i) {
+    myVideo.src=i+".mp4"; 
+    myVideo.load();
+    myVideo.play(); 
+}
+function getCurTime() {  
+   document.getElementById("DivCurTime").innerHTML= vid.currentTime; 
+}   
+function setCurTime(t) { 
+   vid.currentTime=t;  
+   getCurTime();
+}  
+function moveMS(ms) { 
+  vid.currentTime+=ms;
+  getCurTime();  
+}   
+</script> 
+</body> 
